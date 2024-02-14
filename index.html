@@ -1,0 +1,100 @@
+<!-- 「！」でも「DOCTYPE」以下の基本部分は出てくる -->
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>ドローンスクール東京練馬 - OPENING</title>
+    <link rel="icon" type="image/png" href="images2/drone_icon4.png" />
+    <meta
+      name="description"
+      content="東京でドローンを学ぶなら東京練馬校｜技術を学ぶ"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 携帯サイズ用に変更するのに必要なやつ 全ページに必要-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- 背景に動画を再生させたい場合のやつ -->
+    <link rel="stylesheet" type="text/css" href="css/6-3-1.css">
+    
+</head>
+
+  <body>
+    <!-- <div id="home" class="big-bg"> -->
+      <header id="header">
+        <h1 id="h1_video">
+          <a href="1_top_page.html"
+            ><img
+              class="logo"
+              src="images2/drone_icon4.png"
+              alt="ドローンスクール東京練馬"
+              width="150%"
+              height="150%"
+              style="
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+                padding: 1px;
+              "
+          /></a>
+        </h1>
+        <div id="video-area">
+        <video id="video" poster="images_movie/tokyo_yakei.mp4" webkit-playsinline playsinline muted autoplay loop>
+        <!--
+        poster：動画ファイルが利用できない環境で代替表示される画像
+        webkit-playsinline：iOS 9までのSafari用インライン再生指定
+        playsinline：iOS 10以降のSafari用インライン再生指定
+        muted：音声をミュートさせる
+        autoplay：動画を自動再生させる
+        loop：動画をループさせる
+        controls：コントロールバーを表示する
+        -->
+        <source src="images_movie/tokyo_yakei.mp4" type="video/mp4">
+        <p>動画を再生できる環境ではありません。</p>
+        </video>
+        <!--/video-area--></div>
+        </header>
+        <!-- <header class="page-header wrapper">
+        <h1 id="h1_video">
+          <a href="1_top_page.html"
+            ><img
+              class="logo"
+              src="images2/ドローンアイコン4.png"
+              alt="ドローンスクール東京練馬"
+              width="150%"
+              height="150%"
+              style="
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+                padding: 1px;
+              "
+          /></a>
+        </h1> -->
+        <nav>
+          <ul class="main-nav_index">
+            <li><a href="1_top_page.html">TOP</a></li>
+            <li><a href="2_concept.html">Concept</a></li>
+            <li><a href="3_katsuyou.html">Case Study</a></li>
+            <li><a href="4_news.html">News</a></li>
+            <li><a href="5_course.html">Course</a></li>
+            <li><a href="6_contact.html#6_contact_access">Access</a></li>
+            <li><a href="6_contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- <div class="home-content wrapper">
+        <h2 class="page-title">［　Drone　］</h2>
+        <p class="p">様々な制度で技術や資格の習得をサポート</p>
+        <a class="button" href="menu.html">コンセプトへ</a>
+      </div> -->
+      <!-- /.home-content -->
+    <!-- </div> -->
+    <!-- /#home -->
+  </body>
+</html>

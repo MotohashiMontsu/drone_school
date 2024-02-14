@@ -1,0 +1,788 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+  background-color: #dcdddf;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+#img-banner {
+  width: 120px;
+  height: auto;
+}
+
+.logo {
+  width: 70px;
+  margin-top: 14px;
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+  /* リストの「・」の表示を無くすには「list-style」をnoneで消える */
+}
+.main-nav-katsuyou {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+  /* リストの「・」の表示を無くすには「list-style」をnoneで消える */
+}
+.main-nav-news {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+  /* リストの「・」の表示を無くすには「list-style」をnoneで消える */
+}
+.main-nav li {
+  margin-left: 36px;
+}
+.main-nav-katsuyou li {
+  margin-left: 36px;
+}
+.main-nav-news li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: #000;
+  /* background-color: darkgoldenrod;
+  border-radius: 5px; */
+  border-left: 1px solid #000;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.main-nav_index a {
+  color: #dcdddf;
+  /* background-color: darkgoldenrod;
+  border-radius: 5px; */
+  border-left: 1px solid #dcdddf;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+/* 「a」コードは基本カラーがバイオレッドのため、他の色でカラーを指定して変えることが多い */
+.main-nav a:hover {
+  color: #0bd;
+  /* 「:～～」は疑似要素、疑似クラスという、他にもいくつか種類がある */
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  /* font-size: 1.25rem; */
+  text-transform: uppercase;
+  list-style: none;
+}
+
+/* リストの「・」の表示を無くすには「list-style」をnoneで消える */
+.sub-nav li {
+  margin-left: 36px;
+}
+.sub-nav a {
+  color: #dcdddf;
+  /* background-color: darkgoldenrod;
+  border-radius: 5px; */
+  border-left: 1px solid #dcdddf;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+.sub-nav a:hover {
+  color: #0bd;
+  /* 「:～～」は疑似要素、疑似クラスという、他にもいくつか種類がある */
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  max-width: 1100px;
+  /* 一般的に1100~900px */
+  /* 「wrapper」はよく使われる */
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/* HOME--- */
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+  color: #fff;
+}
+/* 見出し */
+.page-title {
+  font-size: 5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: solid;
+  color: #fff;
+}
+#page-title-katuyou {
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.page-title-under {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+}
+.page-title-under a {
+  color: #f1750f;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.page-title-under a:hover {
+  color: #fff;
+  background-color: #10d6f0;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+/* ボタン */
+.button {
+  font-size: 1.375rem;
+  background: rgb(0, 187, 221, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  /* 「border-radius」角に丸みをつけるコード */
+  padding: 18px 32px;
+}
+.button:hover {
+  background: #0090aa;
+}
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+}
+#home {
+  background-image: url(../images2/drone_background_top.jpg);
+  /* ,linear-gradient(#c9ffbf, #ffafbd); */
+  background-blend-mode: luminosity;
+  min-height: 100vh;
+}
+#home .page-title {
+  text-transform: none;
+}
+/* ================== */
+/* NEWS
+/* ================== */
+/* ------------------------------- */
+#news {
+  background-image: url(../images2/drone_news_2.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+#news .page-title {
+  text-align: center;
+}
+
+#banner-size p {
+  width: 120px;
+}
+/* フッター
+------------------------------- */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 26px 0px;
+}
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+/* NEWSコンテンツ
+------------------------------- */
+/* メインエリア */
+article {
+  width: 60%;
+  order: 2;
+}
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+.post-date {
+  background: #0bd;
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  padding-top: 10px;
+}
+/* 「absolute」はブラウザーに対して絶対配置、「relative」は要素に対して相対配置 */
+/* 親に対しては相対配置、子に対して絶対配置のパターンがほとんど */
+.post-date span {
+  font-size: 1rem;
+  border-top: 1px rgba(255, 255, 255, 0.5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  /* 「display: block;」は改行がない インライン要素に対して改行を付けることができる */
+}
+.post-title {
+  font-family: "Yu Mincho", "YuMincho", serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.post-title span {
+  font-size: 1.5rem;
+}
+.post-title,
+.post-cat {
+  margin-left: 120px;
+}
+/* 「，」は「＆」の役割 */
+
+/* サイドバー */
+aside {
+  width: 22%;
+  order: 3;
+}
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+article image {
+  margin-bottom: 20px;
+}
+article p {
+  margin-bottom: 1rem;
+}
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+aside p {
+  padding: 12px 10px;
+}
+.sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+}
+.sub-menu li {
+  border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+.sub-menu a:hover {
+  color: #0bd;
+}
+ad {
+  order: 1;
+}
+.stikey-aside {
+  position: sticky;
+  top: 10px;
+  height: 600px;
+}
+
+/* メニューバーを固定する方法 */
+
+/* MENU */
+#menu {
+  background-image: url(../images/点検‗ソーラーパネル.jpg);
+  min-height: 100vh;
+}
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+.menu-content .page-title {
+  text-align: center;
+  background-color: rgb(220, 221, 223, 0.5);
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+  color: #000;
+  background-color: rgb(220, 221, 223, 0.5);
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.menu-item a {
+  color: #fff;
+}
+.menu-item a:hover {
+  color: #0bd;
+}
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* 「 1fr 1fr 1fr」を「3，1fr」でも同じ */
+  /* 「grid-template-columns」は復習要す！！　Chapter6-5-1～ */
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+.big-box {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.big-box img {
+  height: 94%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .big-box2 {
+  grid-column: 2/4;
+  grid-row: 4/6;
+}
+.big-box2 img {
+  height: 94%;
+  width: 100%;
+  object-fit: cover;
+} */
+/* 試してみて */
+
+/* フォーム */
+#contact {
+  background-image: url(../images2/drone_background_contact.jpg);
+  min-height: 100vh;
+}
+
+#contact-radio-type {
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+#contact-radio-type label p {
+  color: #000;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-top: 10px;
+  display: block;
+  color: #dcdddf;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+  padding: 4% 0;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.location-map {
+  width: 74%;
+}
+iframe {
+  width: 100%;
+}
+
+/* SNS */
+#sns {
+  background: #faf7f0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
+}
+
+/* ココから最終課題 */
+.about__title {
+  padding-left: 50px;
+  padding-bottom: 36px;
+}
+
+.about__body-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.about__body-item-img {
+  width: 46%;
+}
+.about__body-item-img img {
+  width: 100%;
+}
+.about__body-item-texts {
+  box-sizing: border-box;
+  width: 54%;
+  /* padding-right: 7.8%;
+  padding-left: 7.8%; */
+}
+
+.about__body-item-texts-copy {
+  font-size: 26px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  font-weight: bold;
+}
+.about__body-item-texts-copy a {
+  color: #006a80;
+  padding-left: 10px;
+}
+.about__body-item-texts-copy a:hover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.about__body-item-texts-p {
+  padding-top: 25px;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 1.8;
+}
+.about__body-more {
+  padding-top: 60px;
+}
+.about__body-more a {
+  margin: 0 auto;
+}
+
+#course {
+  background-image: url(../images2/standard_course.jpg);
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+
+#course-content {
+  max-width: 800px;
+  margin-top: 5%;
+}
+
+.menu {
+  max-width: 100%;
+  text-align: right;
+  /* margin: 20px auto; */
+  padding: 16px 200px 16px 0;
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+#center_ch {
+  text-align: center;
+}
+
+#center_ch_course {
+  text-align: center;
+  color: #fff;
+}
+/* CONCEPT */
+#concept {
+  background-image: url(../images2/drone_concept.jpg),
+    linear-gradient(#dcdddf, #000);
+  background-blend-mode: exclusion;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+.concept-content {
+  margin: 5% 5% 25% 5%;
+}
+.concept-content-h2 {
+  padding: 10px 30px;
+  background-color: rgba(0, 187, 221, 0.5);
+  color: #000;
+  border-radius: 5px;
+}
+#concept-content-h2 {
+  margin-top: 20px;
+}
+.concept-content-h2 div {
+  margin: 10px 25px 30px 25px;
+}
+
+/* =======================
+///////ドローン紹介///////
+======================= */
+#syokai-drone {
+  font-size: 25px;
+  margin: 50px 10px 20px 10px;
+  display: block;
+  color: #dcdddf;
+  text-align: center;
+}
+#syokai-drone p a {
+  width: 100px;
+  background-color: #ff0000;
+  border-radius: 5px;
+  padding: 1px;
+  color: #fff;
+}
+#syokai-drone a:hover {
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1px;
+  color: #ff0000;
+}
+
+/*========= 背景動画設定のCSS ===============*/
+
+/*header設定*/
+#header {
+  position: relative; /*h1の中央寄せ配置の起点とするためのrelative*/
+  height: 100vh; /*高さを全画面にあわせる*/
+}
+
+#video-area {
+  position: fixed;
+  z-index: -1; /*最背面に設定*/
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#video {
+  /*天地中央配置*/
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*縦横幅指定*/
+  width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+  height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/*見出し設定*/
+#h1_video {
+  /*要素の配置*/
+  position: absolute;
+  /*要素を天地中央寄せ*/
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  /*見た目の調整*/
+  color: #fff;
+  text-shadow: 0 0 15px #666;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  /* HEADER */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+  }
+  /* ================== */
+  /* HOME */
+  /* ================== */
+  .home-content {
+    margin-top: 20%;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* ================== */
+  /* NEWS */
+  /* ================== */
+
+  .news-contents {
+    flex-direction: column;
+  }
+  article,
+  aside {
+    width: 100%;
+  }
+  #news .page-title {
+    margin-top: 30px;
+  }
+  aside {
+    margin-top: 60px;
+  }
+  .post-info {
+    margin-bottom: 30px;
+  }
+  .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  .post-date span {
+    font-size: 0.875rem;
+    padding-top: 2px;
+  }
+  .post-title {
+    font-size: 1.375rem;
+  }
+  .post-cat {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  .post-title,
+  .post-cat {
+    margin-left: 80px;
+  }
+  .ad {
+    display: none;
+  }
+  /* PC版で消してモバイルで出したい場合は
+  PCは「 display: none;」にしてモバイルは「 display: block;」 */
+  /* MENU */
+  .menu-content {
+    margin-top: 20%;
+  }
+  /* MENU */
+  .menu-content {
+    margin-top: 20%;
+  }
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .big-box img {
+    height: auto;
+  }
+  /* CONTACT */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+  #contact-font-color {
+    color: #fff;
+  }
+
+  /* フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
+  }
+  /* 店舗情報・地図 / SNS */
+  #location .wrapper,
+  #sns .wrapper {
+    flex-direction: column;
+  }
+  .location-info,
+  .location-map,
+  .sns-box {
+    width: 100%;
+  }
+  .sns-box {
+    margin-bottom: 30px;
+  }
+
+  /* ココから最終課題 */
+  .about__title {
+    padding-left: 0;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .about__body-item {
+    flex-direction: column;
+  }
+  .about__body-item--reverse {
+    flex-direction: column-reverse;
+  }
+  .about__body-item-img {
+    width: 100%;
+  }
+  .about__body-item-texts {
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 48px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .about__body-item-texts-copy {
+    font-size: 16px;
+  }
+  .about__body-item-texts-p {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  .about__body-more {
+    padding-top: 0;
+  }
+}
